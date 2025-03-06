@@ -1,39 +1,42 @@
-/* Select the image with a class of kitty-1 */
-write-your-selector-here {
-  position: absolute;
-  z-index: 1;
-  top: 276px;
-  left: 129px;
+/* Ensure the wheelbarrow container is the positioning reference */
+#wheelbarrow {
+  position: relative;
+  width: 500px;
+  height: 400px;
+  border: 2px solid black;
 }
 
-/* Select the image with id of kitty-2 */
-write-your-selector-here {
+/* 1. Select the image with a class of kitty-1 */
+.kitty-1 {
   position: absolute;
-  z-index: 2;
-  top: 212px;
-  left: 369px;
+  top: 50px;
+  left: 100px;
 }
 
-/* Select the image inside the element with an id of basket (using its descendent relationship) */
-write-your-selector-here {
+/* 2. Select the image with an id of kitty-2 */
+#kitty-2 {
   position: absolute;
-  z-index: 5;
-  top: 291px;
-  left: 319px;
+  top: 80px;
+  left: 150px;
 }
 
-/* Select the image based on it being a sibling that follows immediately after the element with an id of ball (using adjacent sibling selector) */
-write-your-selector-here {
+/* 3. Select the image inside the element with an id of basket */
+#basket img {
   position: absolute;
-  z-index: 4;
-  top: 260px;
-  left: 455px;
+  top: 120px;
+  left: 200px;
 }
 
-/* Select the image that has an alt attribute value matching "Kitty 5" (using attribute selector) */
-write-your-selector-here {
+/* 4. Select the image based on the respective sibling element */
+.sibling + img {
   position: absolute;
-  z-index: 3;
-  top: 217px;
-  left: 223px;
+  top: 140px;
+  left: 250px;
+}
+
+/* 5. Select the image with an alt attribute of "Kitty 5" */
+img[alt="Kitty 5"] {
+  position: absolute;
+  top: 160px;
+  left: 300px;
 }
